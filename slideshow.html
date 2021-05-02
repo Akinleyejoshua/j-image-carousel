@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- This is a slideshow element -->
+    <div class="image-slider">
+        <!-- slide caption -->
+        <div class="caption">
+            <p class="caption-text"></p>
+        </div>
+
+        <!-- image navigators -->
+        <button class="prev" onclick="prevSlide();">&#10094;</button>
+        <button class="next" onclick="nextSlide();">&#10095;</button>
+
+        <!-- image container -->
+        <div class="image-container">
+            <img class="image-slide">
+        </div>
+
+        <!-- image slide indicator -->
+        <div class="slide-indicator">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

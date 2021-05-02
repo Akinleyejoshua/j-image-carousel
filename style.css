@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* image styles */
+.image-slider{
+    position: relative;
+    height: 15em;
+}
+
+.caption{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+}
+
+.caption p{
+    padding: 0.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.prev, .next{
+    padding: 1em;
+    position: absolute;
+    border: none;
+    background-color: rgba(153, 58, 58, 0);
+    color: white;
+    height: 100%;
+    font-size: large;
+    cursor: pointer;
+    z-index: 1;
+    transition: 1s;
+}
+
+.next{
+    right: 0;
+}
+
+.image-container, .image-slide{
+    height: 100%;
+    width: 100%;
+}
+
+.fade{
+    animation: fade 2s;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.slide-indicator{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    padding: 0.5em;
+}
+
+.dot{
+    width: 1em;
+    height: 1em;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0.1em;
+}
+
+.dot-active{
+    background-color: whitesmoke;
+}
